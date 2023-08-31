@@ -1,0 +1,14 @@
+stages:
+  - deploy
+
+heroku_deploy:
+  stage: deploy
+
+  script:
+    - echo "Deploying to $HEROKU_DEPLOY_APP"
+    - gem install dpl
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_PRODUCTION_KEY
+
+  only:
+    - main
+    - merge_requests

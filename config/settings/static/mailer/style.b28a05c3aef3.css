@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url("fonts/opensans-regular-webfont.2fc973e8bd78.woff2") format('woff2'),
+         url("fonts/opensans-regular-webfont.a57e3c61c3ca.woff") format('woff');
+    /* Agrega más formatos si es necesario */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fuente2';
+    src: url("fonts/sohogothicpro-light-webfont.40405bbbd64e.woff2") format('woff2'),
+         url("fonts/sohogothicpro-light-webfont.beb42755e4a9.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    font-family: 'OpenSans', sans-serif;
+}
+h2{
+    font-family: 'SohoGothicPro', sans-serif;
+}
+.container{
+    width: 550px;
+}
+.image{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.text-container{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #EDEDED;
+}
+.button{
+    display: inline-block; 
+    background-color: #330072; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.image-footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image2{
+    padding-top: 20px;
+    padding-bottom: 7px;
+
+}
+.logos-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

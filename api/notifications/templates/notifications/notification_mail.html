@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('https://tecnikids-back.herokuapp.com/static/mailer/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('https://tecnikids-back.herokuapp.com/static/mailer/fonts/opensans-regular-webfont.woff') format('woff');
+    /* Agrega más formatos si es necesario */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Fuente2';
+        src: url('https://tecnikids-back.herokuapp.com/static/mailer/fonts/sohogothicpro-light-webfont.woff2') format('woff2'),
+            url('https://tecnikids-back.herokuapp.com/static/mailer/fonts/sohogothicpro-light-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        background-color: #F2F2F2;
+        font-family: 'OpenSans', sans-serif;
+    }
+    h2{
+        font-family: 'SohoGothicPro', sans-serif;
+    }
+    .container{
+        width: 550px;
+    }
+    .image{
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .text-container{
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #EDEDED;
+    }
+    .button{
+        display: inline-block; 
+        background-color: #330072; 
+        color: white; 
+        padding: 10px 20px; 
+        text-decoration: none; 
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+    }
+    .image-footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image2{
+        padding-top: 20px;
+        padding-bottom: 7px;
+
+    }
+    .logos-container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <img src="https://tecnikids-back.herokuapp.com/static/mailer/img/kurioslogo.png" alt="Logo de la Compañía" width="180px"
+        class="image">
+    </header>
+    <div class="text-container">
+        <h2>Hola, {{ user }},</h2>
+        <p>{{ content }}</p>
+        <a href="{{ url }}">Acceder</a>
+    </div>
+    <div class="image-footer-container">
+        <img src="https://tecnikids-back.herokuapp.com/static/mailer/img/kurioslogo.png" alt="Logo de la Compañía" width="90px"
+        class="image2">
+        <div class="logos-container">
+            <a href="mailto:atencionalclientetk@gmail.com">
+                <i class="fa-regular fa-envelope" 
+                style="color: #757575; font-size: 18px"></i>
+            </a>
+        <a href="https://instagram.com/tecnikidsve?igshid=MzRlODBiNWFlZA==">
+            <i class="fab fa-instagram" 
+            style="color: #757575; font-size: 19px"></i>
+        </a>
+        <a href="https://ve.linkedin.com/company/tecnikids-venezuela">
+            <i class="fa-brands fa-linkedin-in" 
+            style="color: #757575; font-size: 18px"></i>
+        </a>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
